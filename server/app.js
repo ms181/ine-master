@@ -13,7 +13,7 @@ const categoryRoutes = require('./Routes/categoryRoutes');
 
 
 // Middlewares
-app.use(cors());
+// app.use(cors());
 app.use(require('express').json());
 
 // -- using routes --

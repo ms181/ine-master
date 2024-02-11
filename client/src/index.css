@@ -1,0 +1,16 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins&family=Inter+Tight";
+@import "./assets/styles/typography.css";
+@import "./assets/styles/elements.css";
+@import "./assets/styles/sidebar.css";
+@import "./assets/styles/dashboard.css";
+
+/* ---tailwind stuffs--- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply m-0 p-0 box-border font-secondary duration-100;
+  }
+}

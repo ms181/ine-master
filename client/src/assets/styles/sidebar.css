@@ -1,0 +1,38 @@
+@layer components {
+  .sidebar {
+    @apply relative flex flex-col overflow-auto w-full h-screen p-8 max-sm:p-0;
+  }
+
+  .sidebar .user {
+    @apply flex items-center gap-4;
+  }
+
+  .sidebar .user img {
+    @apply w-1/4 rounded-full aspect-square;
+  }
+
+  .sidebar .user .info {
+    @apply w-3/4 h-fit;
+  }
+
+  .sidebar .user .info h6,
+  .sidebar .user .info p {
+    @apply leading-4;
+  }
+
+  .sidebar .user .info p {
+    @apply text-gray-500 text-sm;
+  }
+
+  .sidebar .menu {
+    @apply list-none my-8;
+  }
+
+  .sidebar .menu li {
+    @apply flex items-center cursor-pointer hover:bg-indigo-50 py-3 px-4 mb-2 last:mb-0 rounded-xl gap-2.5 font-primary font-medium;
+  }
+
+  .sidebar .bottom {
+    @apply absolute bottom-8 flex gap-4;
+  }
+}

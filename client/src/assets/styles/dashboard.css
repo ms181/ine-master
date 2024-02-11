@@ -1,0 +1,20 @@
+@layer components{
+	.section1{
+		@apply grid lg:grid-cols-2 gap-8;
+	}
+	.section2{
+		@apply grid lg:grid-cols-3 
+		gap-8 mt-8;
+	}
+	.dashboardCardGrid{
+		@apply grid grid-cols-2 gap-8;
+	}
+	.info-text{
+		@apply text-body-2 text-gray-500;
+	}
+	.icon-wrapper{
+		@apply flex items-center 
+		justify-center w-12 h-12 
+		rounded-full;
+	}
+}

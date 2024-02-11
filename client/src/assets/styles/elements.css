@@ -1,0 +1,120 @@
+@layer components {
+  /* button  */
+  .btn {
+    @apply text-white capitalize 
+        rounded-lg shadow-md
+        hover:shadow-xl shadow-gray-800/10 transition-all py-2 px-8 text-lg;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 hover:shadow-primary-600/40;
+  }
+
+  .btn-secondary {
+    @apply bg-orange-600 hover:shadow-orange-600/40;
+  }
+
+  .btn-neutral {
+    @apply bg-gray-600 hover:shadow-gray-600/40;
+  }
+
+  .btn-danger {
+    @apply bg-red-600 hover:shadow-red-600/40;
+  }
+
+  .btn-lg {
+    @apply py-3 px-12 text-xl;
+  }
+
+  .btn-sm {
+    @apply py-1.5 px-6 text-base;
+  }
+
+  .btn-xs {
+    @apply py-1 px-4 text-sm;
+  }
+
+  ul {
+    @apply list-inside list-disc;
+  }
+
+  ol {
+    @apply list-inside list-decimal;
+  }
+
+  table {
+    @apply border-collapse w-full;
+  }
+
+  tr {
+    @apply border border-gray-300;
+  }
+
+  th,
+  td {
+    @apply px-4 py-2 text-left;
+  }
+
+  th {
+    @apply capitalize text-lg;
+  }
+
+  /* form elements */
+  .form {
+    @apply p-10;
+  }
+  .form-label {
+    @apply block;
+  }
+  .form-group {
+    @apply my-4 flex flex-col gap-2;
+  }
+  .form-control {
+    @apply border py-2 outline-none border-transparent border-b border-b-gray-300 focus:border-b-gray-400 bg-transparent;
+  }
+
+  /* cards */
+  .card {
+    @apply overflow-hidden w-full flex shadow-2xl rounded-xl h-fit gap-2;
+  }
+
+  .card .image {
+    @apply w-2/5 bg-gray-300 rounded-l-xl flex justify-center;
+  }
+
+  .card.card-vertical .image {
+    @apply w-full;
+  }
+
+  .card .image img {
+    @apply object-cover;
+  }
+
+  .card .content {
+    @apply px-4 py-8 flex flex-col gap-5 w-3/5;
+  }
+
+  .card.card-vertical .content {
+    @apply w-full p-4;
+  }
+
+  .card .content .button-group {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .card.card-vertical .content .button-group button {
+    @apply w-full;
+  }
+
+  .card-vertical {
+    @apply flex-col;
+  }
+
+  .dashboardCard {
+    @apply card flex items-center bg-white p-5;
+  }
+
+  .tag {
+    @apply text-body-2 bg-gray-300 rounded p-1 mr-1;
+  }
+}

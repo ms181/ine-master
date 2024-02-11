@@ -1,0 +1,73 @@
+### Test Server
+
+POST  http://localhost:3000/
+Content-Type: application/json
+
+{
+    "name": "amith"
+}
+
+### Signup
+POST http://localhost:3000/api/auth/signup
+Content-Type: application/json
+
+{
+    "name": "amit1",
+    "email": "amit1@gmail.com",
+    "password" : "12345678"
+}
+
+### Login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "amit@gmail.com",
+    "password" : "12345678"
+}
+
+### Add Income
+POST http://localhost:3000/api/income/addincome
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW1pdDEiLCJlbWFpbCI6ImFtaXQxQGdtYWlsLmNvbSIsImlhdCI6MTcwNzQ2OTM5OX0.FdGCJFEeZtMylRQsUUI4ZH4NLrY-05kiY16cvEfw39c
+
+{
+    "title": "Some Income",
+    "date": "3454",
+    "category" : "incomecat",
+    "amount" : "2000",
+    "description" : "this is a really big description and i really like it"
+}
+
+### Add expense
+POST http://localhost:3000/api/expense/addexpense
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW1pdDEiLCJlbWFpbCI6ImFtaXQxQGdtYWlsLmNvbSIsImlhdCI6MTcwNzQ2OTM5OX0.FdGCJFEeZtMylRQsUUI4ZH4NLrY-05kiY16cvEfw39c
+
+{
+    "title": "Some expense",
+    "date": "3454",
+    "category" : "expensecat",
+    "amount" : "2000",
+    "description" : "this is a really big description and i really like it"
+}
+
+### Add Income Category
+POST http://localhost:3000/api/category/addincomecategory
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW1pdDEiLCJlbWFpbCI6ImFtaXQxQGdtYWlsLmNvbSIsImlhdCI6MTcwNzQ2OTM5OX0.FdGCJFEeZtMylRQsUUI4ZH4NLrY-05kiY16cvEfw39c
+
+{
+    "title": "Some Income",
+    "description" : "this is a really big description and i really like it"
+}
+
+### Add expense Category
+POST http://localhost:3000/api/category/addexpensecategory
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW1pdDEiLCJlbWFpbCI6ImFtaXQxQGdtYWlsLmNvbSIsImlhdCI6MTcwNzQ2OTM5OX0.FdGCJFEeZtMylRQsUUI4ZH4NLrY-05kiY16cvEfw39c
+
+{
+    "title": "Some expense",
+    "description" : "this is a really big description and i really like it"
+}
